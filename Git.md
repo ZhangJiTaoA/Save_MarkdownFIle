@@ -68,15 +68,26 @@
 
 12. 设置ssh-key
 
-13. 
+13. ```git
+    cd ~/.ssh  
+    ls   // 查看是否有id_rsa和id_rsa.pub文件，如果有，说明已有SSH Key
+    ssh-keygen -t rsa -c "xxx@xxx.com"  // 生成ssh key
+    cd ~/.ssh
+    cat id_rsa.pub  // 获取公钥内容，复制并在github上添加
+    ssh -T git@github.com  // 验证是否设置成功，之后再次clone时使用ssh而不是https!
+    ```
 
-7. 
+14. 
 
-8. 
+15. 
 
-9. 
+16. 
 
-10. **git其他指令。**
+17. 
+
+18. 
+
+19. **git其他指令。** 
 
     ```git
     git log   // 查看提交日志
@@ -88,7 +99,7 @@
     git rm "filename" // 版本库中删除文件
     ```
 
-11. 
+20. 
 
 
 

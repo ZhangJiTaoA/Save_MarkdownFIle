@@ -66,7 +66,7 @@
     git branch --set-upstream-to=origin  // 如果上面pull报错，设置远程分支。
     ```
 
-12. 
+12. 设置ssh-key
 
 13. 
 

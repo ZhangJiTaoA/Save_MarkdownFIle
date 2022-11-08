@@ -13,6 +13,7 @@
 
    ```git
    git init  //将当前目录变成git可以管理的仓库
+   git clone [url]   //从远程克隆一个仓库
    ```
 
    **系统自动创建了唯一一个master分支**
@@ -99,7 +100,7 @@
     git rm "filename" // 版本库中删除文件
     ```
 
-20. jjj
+20. 
 
 
 

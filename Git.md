@@ -42,12 +42,13 @@
 
 8. 分支指令
 
-   ```git
+   ``` 
    git branch "branchname"  // 创建一个分支
    git checkout "branchname"  // 切换到分支
    git checkout -b branchname  // 创建并切换
    git branch  // 查看分支
    git branch -d branchname  // 删除分支
+   git branch -dr [remote/branch]  // 删除远程分支
    ```
 
 9. 合并指令
@@ -72,7 +73,7 @@
 13. ```git
     cd ~/.ssh  
     ls   // 查看是否有id_rsa和id_rsa.pub文件，如果有，说明已有SSH Key
-    ssh-keygen -t rsa -c "xxx@xxx.com"  // 生成ssh key
+    ssh-keygen -t rsa -C "xxx@xxx.com"  // 生成ssh key
     cd ~/.ssh
     cat id_rsa.pub  // 获取公钥内容，复制并在github上添加
     ssh -T git@github.com  // 验证是否设置成功，之后再次clone时使用ssh而不是https!

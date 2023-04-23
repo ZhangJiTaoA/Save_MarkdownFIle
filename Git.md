@@ -101,7 +101,14 @@
     git rm "filename" // 版本库中删除文件
     ```
 
-20. 
+20. **git大文件**
+
+```bash
+git lfs install
+git lfs track    // 查看现有的文件追踪模式
+git lfs track *.后缀   // 添加要管理的大文件的文件类型
+git lfs ls-files     // 获取git lfs管理的所有文件列表
+```
 
 
 

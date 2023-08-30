@@ -49,6 +49,7 @@
    git branch  // 查看分支
    git branch -d branchname  // 删除分支
    git branch -dr [remote/branch]  // 删除远程分支
+   git push origin --delete branchname
    ```
 
 9. 合并指令

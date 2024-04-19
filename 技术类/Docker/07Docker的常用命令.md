@@ -108,6 +108,15 @@ docker stop 容器id     # 停止当前正在运行的容器
 docker kill 容器id     # 强制停止当前正在运行的容器
 ```
 
+```shell
+# 修改容器映射端口
+# 找到文件 /var/lib/docker/content/id名/(config.v2.json,hostconfig.json)并修改
+# 修改容器名称
+docker rename
+```
+
+
+
 #### 常用其他命令
 
 ```shell

@@ -18,4 +18,47 @@ DockerServer接收到DockerClient的指令，就会执行这个命令！
 
 1. Docker有着比虚拟机更少的抽象层！
 2. Docker利用的是宿主机的内核！vm需要Guest OS！新建容器时，Docker无需加载一个操作系统内核。
-3. 
+
+
+
+
+
+**docker-和宿主机**
+
+```shell
+docker inspect name  # 找到Pid
+ps -ef | grep 找到的Pid  # 一个容器在宿主机看来就是一个进程
+```
+
+
+
+**namespace隔离**
+
+- IPC：隔离进程间通信资源
+- NET：网络设备，协议栈，端口
+- PID：进程号
+- USER：用户/组
+- UTS：主机名及域名
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
